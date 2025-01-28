@@ -138,3 +138,48 @@ body {
     border-radius: 2px;
     transition: all 0.3s;
 }
+
+/* Общие стили для фона */
+.hero {
+    margin-top: 4rem;
+    padding: 6rem 2rem;
+    text-align: center;
+    color: white;
+    background-size: cover; /* Масштабирование фона */
+    background-position: center; /* Центрирование фона */
+    position: relative; /* Для наложения затемнения */
+}
+
+/* Затемнение фона для улучшения читаемости текста */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Чёрный цвет с прозрачностью 40% */
+    z-index: 1;
+}
+
+/* Контент внутри .hero должен быть выше затемнения */
+.hero h1,
+.hero p,
+.hero .cta-buttons {
+    position: relative;
+    z-index: 2;
+}
+
+/* Фоновое изображение для компьютеров (ширина экрана больше 768px) */
+@media (min-width: 769px) {
+    .hero {
+        background-image: url('/img/bigBack.png'); /* Замените на ваш путь */
+    }
+}
+
+/* Фоновое изображение для мобильных устройств (ширина экрана меньше 768px) */
+@media (max-width: 768px) {
+    .hero {
+        background-image: url('/img/back.png'); /* Замените на ваш путь */
+    }
+}
