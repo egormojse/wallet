@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться с нами - CryptoSocial Wallet</title>
+    <link rel="stylesheet" href="contactStyle.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-content">
+        <a href="/" class="logo">CryptoSocial</a>
+        <div class="nav-links">
+            <a href="features.html">Возможности</a>
+            <a href="team.html">Команда</a>
+            <a href="contact.html">Контакты</a>
+            <a href="login.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+        </div>
+    </div>
+</nav>
+
+<div class="contact-container">
+    <div class="contact-info">
+        <h1>Свяжитесь с нами</h1>
+        <p>У вас есть вопросы или предложения? Мы всегда рады помочь и выслушать ваше мнение о нашем продукте.</p>
+
+        <div class="contact-methods">
+            <div class="contact-method">
+                <div class="contact-method-icon">📧</div>
+                <div>
+                    <h3>Email</h3>
+                    <p>support@cryptosocial.com</p>
+                </div>
+            </div>
+
+            <div class="contact-method">
+                <div class="contact-method-icon">💬</div>
+                <div>
+                    <h3>Telegram</h3>
+                    <p>@cryptosocial_support</p>
+                </div>
+            </div>
+
+            <div class="contact-method">
+                <div class="contact-method-icon">📱</div>
+                <div>
+                    <h3>Discord</h3>
+                    <p>CryptoSocial Community</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" onsubmit="return handleSubmit(event)">
+        <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Тема</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="button">Отправить сообщение</button>
+
+        <div class="success-message" id="successMessage">
+            Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.
+        </div>
+    </form>
+</div>
+
+<script src="contactScript.js"></script>
+</body>
+</html>
