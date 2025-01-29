@@ -5,7 +5,7 @@ function handleSubmit(event) {
     const button = form.querySelector('.button');
     const successMessage = document.getElementById('successMessage');
 
-    // Имитация отправки формы
+    
     button.disabled = true;
     button.textContent = 'Отправка...';
 

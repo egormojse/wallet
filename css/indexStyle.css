@@ -150,10 +150,10 @@ body {
     line-height: 1.6;
 }
 
-/* Скрытие обычных ссылок и кнопки гамбургера на мобильных устройствах */
+
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Скрыть обычное меню */
+        display: none;
         flex-direction: column;
         background-color: #333;
         position: absolute;
@@ -171,7 +171,7 @@ body {
     }
 
     .hamburger {
-        display: block; /* Показать кнопку гамбургера */
+        display: block;
         background: none;
         border: none;
         color: #333;
@@ -180,14 +180,14 @@ body {
     }
 }
 
-/* Показ обычного меню для экранов больше 768px */
+
 @media (min-width: 769px) {
     .nav-links {
-        display: flex; /* Обычное меню */
+        display: flex;
     }
 
     .hamburger {
-        display: none; /* Скрыть кнопку гамбургера на больших экранах */
+        display: none;
     }
 }
 

@@ -1,4 +1,3 @@
-// Анимация появления карточек при прокрутке
 const teamMembers = document.querySelectorAll('.team-member');
 
 const observer = new IntersectionObserver(
@@ -22,7 +21,7 @@ teamMembers.forEach(member => {
     observer.observe(member);
 });
 
-// Плавный скролл для навигации
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

@@ -4,7 +4,7 @@ document.getElementById('hamburger-btn').addEventListener('click', function() {
 });
 
 
-// Анимация прокрутки для навигации
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -14,7 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Анимация появления карточек при прокрутке
+
 const cards = document.querySelectorAll('.feature-card');
 const observer = new IntersectionObserver(
     entries => {
